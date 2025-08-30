@@ -71,6 +71,7 @@ src/
 | Method | Endpoint         | Description    |
 | ------ | ---------------- | -------------- |
 | GET    | `/api/books`     | Get all books  |
+| GET    | `/api/books:bookId`     | Get a single books  |
 | POST   | `/api/books`     | Add a new book |
 | PATCH  | `/api/books/:bookId` | Update a book  |
 | DELETE | `/api/books/:bookId` | Delete a book  |
