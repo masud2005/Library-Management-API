@@ -6,8 +6,10 @@ import cors from 'cors';
 const app: Application = express();
 
 // Middleware
-app.use(cors());
-app.use(express.json());    
+app.use(express.json());
+app.use(cors({
+    origin: ["https://redux-library-management-system-kappa.vercel.app"]
+}));
 
 app.use("/api/books", booksRoutes);
 app.use("/api/borrow", borrowRoutes);
